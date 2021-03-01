@@ -1,8 +1,9 @@
-<h1>Bem-vindo!</h1>
+<h1>Bem-vindo ao curso de <%= @curso %>, <%= @nome %>!</h1>
 <p><strong>Data:</strong> <%= date_br(Date.today) %></p>
 
 <ul>
   <li>
+    <%# helper de link tag %>
     <%= link_to 'Cadastro de moedas', coins_path %>
   </li>
 </ul>
