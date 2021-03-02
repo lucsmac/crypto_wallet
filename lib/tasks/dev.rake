@@ -38,15 +38,15 @@ namespace :dev do
   task add_mining_types: :environment do
     mining_types = [
       {
-        name: 'Proof of Work',
+        description: 'Proof of Work',
         acronym: 'PoW',
       },
       {
-        name: 'Proof of Stake',
+        description: 'Proof of Stake',
         acronym: 'PoS',
       },
       {
-        name: 'Proof of Capacity',
+        description: 'Proof of Capacity',
         acronym: 'PoC',
       },
     ]
