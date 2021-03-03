@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner('Drop DB') { %x(rails db:drop) }
       show_spinner('Create DB') { %x(rails db:create) }
       show_spinner('Migrate DB') { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "You aren't on development environment"
     end
@@ -18,12 +18,14 @@ namespace :dev do
       {
         description: 'Bitcoin',
         acronym: 'BTC',
-        url_image: 'https://i.pinimg.com/originals/ef/da/8b/efda8b6316786f2ff349f3065974249b.jpg'
+        url_image: 'https://i.pinimg.com/originals/ef/da/8b/efda8b6316786f2ff349f3065974249b.jpg',
+        mining_type: MiningType.find_by(acronym: 'PoW')
       },
       {
         description: 'Ethereum',
         acronym: 'ETH',
-        url_image: 'https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png'
+        url_image: 'https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png',
+        mining_type: MiningType.all.sample
       }
     ]
 
