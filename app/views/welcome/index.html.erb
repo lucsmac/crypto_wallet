@@ -1,6 +1,16 @@
+<p>
+  <%= link_to 'Idioma Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+  <%= link_to 'Idioma inglês', root_path(locale: 'en') %>
+</p>
+
 <h1>Bem-vindo ao curso de <%= @curso %>, <%= @nome %>!</h1>
 <p>O idioma usado nessa aplicação é: <%= t('actual_locale') %></p>
 <p><strong>Data:</strong> <%= Date.today %></p>
+
+<%# <h2>COOKIE: <%= cookies[:curso] </h2> %>
+<%# <h2>SESSION: <%= session[:curso] </h2> %>
 
 <%= render 'menu' %>
 
