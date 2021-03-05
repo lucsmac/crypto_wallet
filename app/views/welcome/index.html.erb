@@ -1,17 +1,8 @@
-<p>
-  <%= link_to 'Idioma Português', root_path(locale: 'pt-BR') %>
-</p>
-<p>
-  <%= link_to 'Idioma inglês', root_path(locale: 'en') %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4">Seja bem-vindo!</h1>
+  <p class="lead">Este é o Crypto Wallet, uma app para você cadastrar e acompanhar suas criptomoedas.</p>
+  <hr class="my-4">
+  <p>Para comerçar, selecione uma das opções abaixo:</p>
+  <%= render 'menu' %>
+</div>
 
-<h1>Bem-vindo ao curso de <%= @curso %>, <%= @nome %>!</h1>
-<p>O idioma usado nessa aplicação é: <%= t('actual_locale') %></p>
-<p><strong>Data:</strong> <%= Date.today %></p>
-
-<%# <h2>COOKIE: <%= cookies[:curso] </h2> %>
-<%# <h2>SESSION: <%= session[:curso] </h2> %>
-
-<%= render 'menu' %>
-
-<p>Você está em ambiente de <strong><%= rails_env %></strong>.</p>

@@ -26,6 +26,24 @@ namespace :dev do
         acronym: 'ETH',
         url_image: 'https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png',
         mining_type: MiningType.all.sample
+      },
+      {
+        description: 'Dash',
+        acronym: 'DASH',
+        url_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjxPI-bYEzFIskb9_PAn6dn13bSWF2S4FVw&usqp=CAU',
+        mining_type: MiningType.all.sample
+      },
+      {
+        description: 'Iota',
+        acronym: 'IOT',
+        url_image: 'https://cryptologos.cc/logos/iota-miota-logo.png',
+        mining_type: MiningType.all.sample
+      },
+      {
+        description: 'ZCash',
+        acronym: 'ZEC',
+        url_image: 'https://globalcoinresearch.com/wp-content/uploads/2019/03/zcash-icon-fullcolor.png',
+        mining_type: MiningType.all.sample
       }
     ]
 
